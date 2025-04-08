@@ -1,0 +1,188 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{parskip}%
+\usepackage[top=5cm,hmargin=2cm,headheight=100pt,footskip=100pt,bottom=5cm]{geometry}%
+\usepackage{amsmath}%
+\usepackage{graphicx}%
+\usepackage{needspace}%
+\usepackage{color}%
+\usepackage{longtable}%
+\usepackage{tabularx}%
+\usepackage{multirow}%
+\usepackage[table]{xcolor}%
+\usepackage{xcolor}%
+\usepackage{fancyhdr}%
+%
+\definecolor{OsdagGreen}{RGB}{153,169,36}%
+\definecolor{PassColor}{RGB}{153,169,36}%
+\definecolor{Red}{RGB}{255,0,0}%
+\definecolor{Green}{RGB}{0,200,0}%
+\definecolor{FailColor}{HTML}{933A16}%
+\fancypagestyle{header}{ 
+\renewcommand{\headrulewidth}{0pt}%
+\renewcommand{\footrulewidth}{0pt}%
+\fancyhead{ 
+}%
+\fancyfoot{ 
+}%
+\fancyhead[C]{ 
+\begin{tabularx}{\textwidth}{|l|p{4cm}|l|X|}%
+\hline%
+\multicolumn{2}{|c|}{}&\multicolumn{2}{|c|}{Created with%
+\includegraphics[width=4.0cm,height=1cm]{C:/Users/parth/Downloads/Osdag/ResourceFiles/images/Osdag_header_report.png}}\\%
+\hline%
+\rowcolor{OsdagGreen}%
+Company Name&IIT Bombay&Project Title&\\%
+\hline%
+\rowcolor{OsdagGreen}%
+Group/Team Name&Osdag FOSSEE&Subtitle&\\%
+\hline%
+\rowcolor{OsdagGreen}%
+Designer&Parth K&Job Number&\\%
+\hline%
+\rowcolor{OsdagGreen}%
+Date&18 /09 /2024&Client&\\%
+\hline%
+\end{tabularx}
+}%
+\fancyfoot[R]{ 
+Page \thepage
+}
+}%
+%
+\begin{document}
+
+\section{Input Parameters}%
+\label{sec:InputParameters}%
+\renewcommand{\arraystretch}{1.2}%
+\begin{longtable}{|p{5cm}|p{2.5cm}|p{1.5cm}|p{3cm}|p{3.5cm}|}%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Module}&\multicolumn{2}{|c|}{Tension Member Design {-} Bolted to End Gusset}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Axial (kN)* }&\multicolumn{2}{|c|}{76.0}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Length (mm) *}&\multicolumn{2}{|c|}{1250.0}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Section Profile*}&\multicolumn{2}{|c|}{Angles}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Section Size*}&\multicolumn{2}{|c|}{Ref List of Input Section}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Section Material}&\multicolumn{2}{|c|}{E 250 (Fe 410 W)A}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Ultimate Strength, $F_u$ (MPa)}&\multicolumn{2}{|c|}{410}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Yield Strength, $F_y$ (MPa)}&\multicolumn{2}{|c|}{250}\\%
+\hline%
+\hline%
+\multicolumn{5}{|c|}{\textbf{Bolt Details {-} Input and Design Preference}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Diameter (mm)}&\multicolumn{2}{|c|}{{[}8{]}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Property Class}&\multicolumn{2}{|c|}{{[}4.6{]}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Type}&\multicolumn{2}{|c|}{Bearing Bolt}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Hole Type}&\multicolumn{2}{|c|}{Standard}\\%
+\hline%
+\hline%
+\multicolumn{5}{|c|}{\textbf{Detailing {-} Design Preference}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Edge Preparation Method}&\multicolumn{2}{|c|}{Sheared or hand flame cut}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Are the Members Exposed to Corrosive Influences?}&\multicolumn{2}{|c|}{False}\\%
+\hline%
+\hline%
+\multicolumn{5}{|c|}{\textbf{Plate Details {-} Input and Design Preference}}\\%
+\hline%
+\multicolumn{3}{|c|}{\multirow{2}{*}{Thickness (mm)}}&\multicolumn{2}{|c|}{{[}8, 10, 12, 14, 16, 18, 20, 22, 25, 28, 32, 36, 40, 45, }\\%
+\multicolumn{3}{|c|}{\multirow{2}{*}{}}&\multicolumn{2}{|c|}{50, 56, 63, 75, 80, 90, 100, 110, 120{]}}\\%
+\hline%
+\hline%
+\multicolumn{3}{|c|}{Material}&\multicolumn{2}{|c|}{E 250 (Fe 410 W)A}\\%
+\hline%
+\end{longtable}%
+
+
+\subsection{Spacing Check}%
+\label{subsec:SpacingCheck}%
+\renewcommand{\arraystretch}{1.2}%
+\begin{longtable}{|p{2.5cm}|p{7.5cm}|p{3cm}|p{2.5cm}|}%
+\hline%
+\rowcolor{OsdagGreen}%
+Check&Required&Provided&Remarks\\%
+\hline%
+\endhead%
+\hline%
+Min. Diameter (mm)&&$\begin{aligned} d &=8 \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Hole Diameter (mm)& &$\begin{aligned} d_0 &=8 \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Minimum Bolts (nos)& &$\begin{aligned} r_l &=1 \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Min. Gauge Distance (mm)&$\begin{aligned} p/g_{\min}&= 2.5 d\\ &=2.5 \times8.0\\&=20.0\\ \\ & [\text{Ref. IS 800:2007, Cl.10.2.2}] \end{aligned}$&0.0&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Min. Edge Distance (mm)&$\begin{aligned}e_{\min} &= 1.5 d_0 \\ &= 1.5\times8\\ &=12.0\\ \\ & [\text{Ref. IS 800:2007, Cl.10.2.4.2}] \end{aligned}$&15&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Spacing Check&$\begin{aligned} \text{depth} & = 2~e + (r_l -1)~g\\ & = 2 \times 15+(1-1)\times20\\ & = 30\end{aligned}$&29.5&\textcolor{Red}{ 
+\textbf{Fail}
+}\\%
+\hline%
+\end{longtable}
+
+%
+\Needspace{10\baselineskip}%
+
+
+\subsection{Member Check}%
+\label{subsec:MemberCheck}%
+\renewcommand{\arraystretch}{1.2}%
+\begin{longtable}{|p{2.5cm}|p{4.5cm}|p{7cm}|p{1.5cm}|}%
+\hline%
+\rowcolor{OsdagGreen}%
+Check&Required&Provided&Remarks\\%
+\hline%
+\endhead%
+\hline%
+Tension Yielding Capacity (kN)&&$\begin{aligned} T_{\text{dg}} &= \frac{A_g f_y}{\gamma_{m0}}\\ \\ &=\frac{381.0\times250}{1.1\times 10^3}\\ &=86.59\\ \\ & [\text{Ref. IS 800:2007, Cl.6.2}] \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{}
+}\\%
+\hline%
+Slenderness&$\begin{aligned}\frac{K L}{r} &\leq 400\end{aligned}$&$\begin{aligned}\frac{K L}{r} &= \frac{1\times1250.0}{7.8}\\ &= 160.26\\ \\ & [\text{Ref. IS 800:2007, Cl.7.1.2}] \end{aligned}$&\textcolor{OsdagGreen}{ 
+\textbf{Pass}
+}\\%
+\hline%
+\end{longtable}
+
+%
+
+
+
+\end{document}
