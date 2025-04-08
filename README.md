@@ -6,7 +6,6 @@ This project is a Python-based application that allows users to dynamically gene
 - [Features](#features)
 - [Usage](#usage)
 - [Overleaf Integration](#overleaf-integration)
-- [Submission Materials](#submission-materials)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
